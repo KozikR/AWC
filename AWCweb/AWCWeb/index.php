@@ -34,12 +34,47 @@
 </nav>
 <div class="container-fluid">
     <div class="jumbotron">
-        <div class="row" >
-            <div class="col-sm-1 col-md-1 col-lg-1">Status</div>
-            <div sclass="col-sm-1 col-md-1 col-lg-1">Watering</div>
-            <div class="col-sm-1 col-md-1 col-lg-1">Total water consumption</div>
-            <div class="col-sm-1 col-md-1 col-lg-1">Temperature</div>
+    </div>
+    <div class="row">
+        <?php $panel= "col-md-3 col-sm-6" ?>
+        <div class="<?=$panel?>" >
+            <div class="panel panel-success ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Status</h3>
+                </div>
+                <div class="panel-body">The server successfully processed the request.</div>
+            </div>
         </div>
+
+        <div class="<?=$panel?>" >
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Watering</h3>
+                </div>
+                <div class="panel-body">The server successf</div>
+            </div>
+        </div>
+
+        <div class="<?=$panel?>" >
+            <div class="panel panel-info ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Water comsumption</h3>
+                </div>
+                <div class="panel-body">The client should continue with its request.</div>
+            </div>
+        </div>
+
+        <div class="<?=$panel?>" >
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Temperature</h3>
+                </div>
+                <div class="panel-body">The server is temporarily unable to handle the request.</div>
+            </div>
+        </div>
+
+        <div class="clearfix "></div>
+
     </div>
     <div class="row">
         <?php for($i = 0; $i < 12; $i++){ ?>
